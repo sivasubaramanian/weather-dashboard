@@ -3,7 +3,7 @@ let a=document.getElementById("se");
 
 
 let weatherapi= async(city)=>{
-    let url='https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=1bb16afdcbd193a47cf6a91a9cba556b&units=metric'
+    let url='https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=yourapi&units=metric'
     let we= await fetch(url);
     let res=we.json();
     return res;
